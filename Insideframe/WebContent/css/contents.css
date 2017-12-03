@@ -1,0 +1,58 @@
+#contents{
+    background-color: black;
+}
+
+.films-title{
+    width: 100%;
+    border-bottom: 3px solid #fff;
+}
+.films-title h2{
+    width: 650px;
+    margin: 0 20px 0;
+    padding-top: 15px;
+    font: 2.0em 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    position: relative
+}
+.films{
+    width: 100%;
+    height: 350px;    
+    background-image: url(../insideframe/photo/viedo_film.png);
+    background-size: 100% 350px;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.film{
+    float: left;
+    position: relative;
+    margin-top: 25px;
+    width: 33.33%;
+    height: 300px;
+}
+.film iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.find-area{
+    display: inline-block;
+    width: 48.81%;
+    margin: 0 auto;
+    height: 200px;
+}
+.find{
+
+    width: 100%;
+    height: 100px;
+}
+.find img{
+    width: 100%;
+    height: 100%;
+}
+.competition{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+}

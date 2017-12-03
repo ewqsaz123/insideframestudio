@@ -1,0 +1,531 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+menu, nav, div, ul, li, h2{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ul, li, menu{
+    list-style: none;
+}
+
+
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    padding: 15px 35px 0 35px;
+}
+
+
+nav{
+    display: block;
+}
+
+#nav-logo{
+    float: left;
+}
+#nav-logo h1{
+    color: #fff;
+    font-size: 18pt !important;
+    display: inline;
+    font: 13pt 'gt_walsheimthin' !important;
+    text-transform: uppercase !important;
+    letter-spacing: 4pt !important;
+}
+#nav-logo a:hover{
+    text-decoration: none;
+}
+
+
+#nav-bar{
+    float: right;
+}
+.fa-bars:before {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu{
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
+    top: 0;
+    padding-top: 55px;
+    transition: all 0.7s ease-out;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.9);
+    display: none;
+}
+
+
+
+#menu li{
+    padding: 4px;
+    font-size: 17px;
+}
+#menu a{
+    color: #555;
+}
+.mlist{
+    letter-spacing: 3pt;
+    text-transform: uppercase;
+    font: 10pt 'gt_walsheimthin' !important;
+}
+.login{
+    padding: 20px 0 20px 0 !important;
+}
+.mlist2{
+    font-size: 14px;
+    padding: 0 10px 0 10px ;
+}
+
+
+
+.caousel-title{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 10;
+    color: #fff;
+    letter-spacing: 6pt;
+    text-transform: uppercase;
+    font-size: 35pt;
+    font-weight: 600;
+    margin: 0;
+
+    text-align: center;
+}
+.item img{
+    width: 100%;
+}
+
+
+
+
+
+
+/*
+#movedown{
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    left:0;
+    right:0;
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+#movedown img{
+    width: 100%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contents{
+    background-color: black;
+}
+.contents1{
+    padding-bottom: 50px;
+    color: #eee;
+    
+}
+.films-title{
+    border-bottom: 3px solid #fff;
+}
+.films-title h2{
+    text-align: center;
+    margin: 0 20px 0;
+    padding-top: 70px;
+    font: 20pt 'gt_walsheimthin' !important;
+    letter-spacing: pt !important;
+    position: relative
+}
+.films{   
+    background-image: url(../insideframe/photo/viedo_film.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.film{
+    float: left;
+    position: relative;
+    margin: 25px 0;
+    width: 33.33%;
+    opacity: 0.4;
+}
+.film:hover{
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+
+.film img{
+    width: 100%;
+    height: 100%;
+    opacity: 40;
+}
+
+
+.films-button{
+}
+.films-button p{
+    margin-top: 50px;
+    text-align: center;
+}
+.filmbtn{
+    width: 100px;
+    height: 40px;
+    font-size: 0.8em;
+    color:#eee;
+    background-color:black;
+    letter-spacing: 1pt;
+    padding: 8px 15px;
+    text-align: center;
+    border: 1px solid;
+}
+.filmbtn:hover{
+    text-decoration: none;
+    background-color: black;
+    color: orange;
+    transition: all 0.5s ease-out;
+}
+.filmbtn:visited{
+    text-decoration: none;
+}
+.fa-right:after{
+    content: "\f054";
+    font-family: FontAwesome;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contents2{
+    color: #eee;
+    position: relative;
+}
+.look-img{
+    width: 100%;
+    overflow: hidden;
+}
+.look-img img{
+    width: 100%;
+    height: 100%;
+    transition:all 1s ease-out;
+	webkit-transition: all 1s ease-out;
+}
+
+.block{
+    position: absolute;
+    width: 33.3%;
+    height: 100%;
+    
+    top: 0;
+}
+.left1{
+    border-right: 1px solid #eee;
+}
+.left2{
+    left: 33.3%;
+    border-right: 1px solid #eee;
+}
+.left3{
+    left: 66.6%;
+}
+
+
+
+.look-block:hover .darker{
+	z-index: 10;
+	height: 100%
+}
+.darker{
+	position: absolute;
+	left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 0;
+	background-color: black;
+	opacity: 0.6;
+    z-index: 0;
+}
+
+        
+
+
+.look-block:hover .blist h1{
+   	display: -webkit-box;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:4;	
+	height: 200px;
+}
+.blist h1{
+    position: absolute;
+	left: 12px; 
+    width: 50%;
+    bottom: 50%; 
+    height: 60px;
+    color: #eee;
+    letter-spacing: 3pt;
+    text-transform: uppercase;
+    font: 20pt 'gt_walsheimthin' !important;
+	transition:all 1s ease-out;
+	webkit-transition: all 1s ease-out;
+    z-index: 10;
+}
+.blist span{
+    color: orange;
+    font-weight: bold;
+}
+
+
+
+.look-block:hover .blist p{
+   	display: -webkit-box;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:4;	
+	height: 200px;
+    opacity: 1;
+}
+
+.blist p{
+    position: absolute;
+	left: 12px; 
+    width: 40%;
+    bottom: 30%; 
+    height: 45px;
+    color: #eee;
+    font: 13pt 'gt_walsheimthin' !important;
+	transition:all 1s ease-out;
+	webkit-transition: all 1s ease-out;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+
+
+
+
+.look-block:hover .bg{
+    transform: matrix(1, 0, 0, 1, 0, 0);  
+}
+.look-block:hover .cross{
+    color:black;
+}
+.bg {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 35px;
+    height: 35px;
+    border-radius: 22px;
+    background-color: #eee;
+    transform: matrix(0, 0, 0, 0, 0, 0);
+}
+.roundBtn {
+    position: absolute;
+    left: 50%;
+    margin-left: -21px;
+    bottom: 11%;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    z-index: 10;
+}
+.cross {
+    position: absolute;
+    font-size: 20pt;
+    left: 23%;
+    top: -10%;
+    color: #eee;
+}
+
+
+
+
+
+.contents3{
+    padding-bottom: 30px;
+    color: #eee;
+    
+}
+
+.films{   
+    background-image: url(../insideframe/photo/viedo_film.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    border-bottom: 3px solid #fff;
+}
+.films iframe{
+    width: 100%;
+    height: 100%;
+}
+.video{
+    float: left;
+    position: relative;
+    margin: 30px 0;
+    width: 33.33%;
+    height: 350px;
+    opacity: 0.4;
+}
+
+.video:hover{
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+
+
+
+
+
+
+
+
+#footer{
+    background-color:#4d4d4d;
+    color: grey;
+    font-family: "Chronicle Text G1 A","Chronicle Text G1 B";
+    font-style: normal;
+    font-weight: 400;
+}
+.footer-area{
+    margin: 0 auto;
+    padding: 80px 40px;
+    overflow: hidden;
+}
+.footer-area div{
+    font-size: 13px;
+}
+.aboutus{
+    width: 35%;
+    padding-left: 5%;
+    float: right;
+    color: orange;
+    text-align: right
+}
+.aboutus p{
+    margin-bottom: 30px;
+    color: grey;
+    text-align: right;
+}
+.intro{
+     width: 30%;
+    float: left;
+    overflow: hidden;
+    
+}
+.intro div{
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Verlag A","Verlag B";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+}
+.intro span {
+    display: block;
+    margin-bottom: 15px;
+    
+}
+.intro li{
+    list-style-type: none;
+    color: #eee;
+}
+
+
+.footersns{
+    float: left;
+    width: 35%;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin: 0;
+    font-family: "Verlag A","Verlag B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.social{
+    display: block;
+    margin-bottom: 15px;
+}
+.connect{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.connect a{
+    text-decoration: none;
+    color: orange;
+    transform: color 0.2s ease-in-out;
+}
+
+.footersns a {
+    margin-right: 10px;
+}
+.footersns svg path:hover{
+    fill: whitesmoke;
+}
+
+.footersns svg path{
+    fill: grey;
+    opacity: .8;
+    transition: all 0.3s ease-out;
+}
